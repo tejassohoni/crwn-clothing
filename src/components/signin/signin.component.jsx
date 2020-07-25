@@ -57,7 +57,7 @@ class SignIn extends React.Component {
           />
           <div className="buttons">
             <CustomButton
-              type="submit"
+              type="button"
               name="submit"
               onClick={this.handleSubmit}
             >
