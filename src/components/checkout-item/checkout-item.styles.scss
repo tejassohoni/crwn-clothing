@@ -17,17 +17,30 @@
     }
   }
   .name,
-  .quantity,
-  .price {
+  .quantity {
     width: 23%;
+  }
+  .price {
+    @extend .name;
+    padding-left: 10px;
   }
 
   .quantity {
-    padding-left: 20px;
+    padding-left: 10px;
+    display: flex;
+
+    .arrow {
+      cursor: pointer;
+      font-size: 30px;
+    }
+
+    .value {
+      margin: 5px 10px;
+    }
   }
 
   .remove-button {
-    padding-left: 12px;
+    padding-left: 10px;
     cursor: pointer;
   }
 }
