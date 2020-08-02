@@ -5,17 +5,17 @@ const StripeCheckoutButton = ({ price }) => {
   const priceForStripe = price * 100;
   const publishableKey =
     "pk_test_51Gr2JTDG0wh3GMHrRYJrMixpRNfmzA4BtLiv049kmbjsw13h1gfVluKO4LwqlT6oPnCG6OoU8cmkEnGAlkmPMTnL0086gfpNYW";
+
   const onToken = (token) => {
-    console.log(token);
-    alert("Payment Successful");
+    alert("Payment Succesful!");
   };
+
   return (
     <StripeCheckout
       label="Pay Now"
-      name="CRWN Clothing"
+      name="CRWN Clothing Ltd."
       billingAddress
-      shippingAddress
-      allowRememberMe
+      shippingAddresss
       image="https://svgshare.com/i/CUz.svg"
       description={`Your total is $${price}`}
       amount={priceForStripe}
