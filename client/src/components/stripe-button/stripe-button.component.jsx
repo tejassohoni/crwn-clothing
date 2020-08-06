@@ -29,6 +29,7 @@ const StripeCheckoutButton = ({ price }) => {
 
   return (
     <StripeCheckout
+      currency="INR"
       label="Pay Now"
       name="CRWN Clothing Ltd."
       billingAddress
@@ -36,7 +37,6 @@ const StripeCheckoutButton = ({ price }) => {
       image="https://svgshare.com/i/CUz.svg"
       description={`Your total is ₹${price}`}
       amount={priceForStripe}
-      panelLabel="Pay Now"
       token={onToken}
       stripeKey={publishableKey}
     />
